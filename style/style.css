@@ -1,0 +1,89 @@
+body {
+  background: #ddd;
+}
+.container {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+span {
+  font-weight: bold;
+  color: #333;
+}
+select {
+  padding: 8px;
+  border: 1px solid #333;
+}
+.chart {
+  width: 100%;
+  height: 500px;
+  margin: 20px 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.chart path.regressionLine {
+  stroke: #43a047;
+  fill: none;
+  stroke-width: 1.2;
+  stroke-dasharray: 3, 5;
+}
+svg {
+  width: 100%;
+  height: 100%;
+}
+.bar {
+  fill: #80cbc4;
+}
+/* rect {
+  fill: #80cbc4;
+} */
+text {
+  font-size: 0.85em;
+  fill: #fff;
+}
+path.domain {
+  stroke: #fff;
+}
+.tick text {
+  fill: #fff;
+}
+.tick line {
+  fill: #fff;
+}
+line {
+  stroke: #fff;
+}
+line#limit {
+  stroke: #fed966;
+  stroke-width: 3;
+  stroke-dasharray: 3 6;
+}
+.grid path {
+  stroke-width: 0;
+}
+.grid .tick line {
+  stroke: #9faaae;
+  stroke-opacity: 0.3;
+}
+text.divergence {
+  font-size: 1em;
+  fill: #2f4a6d;
+  fill: #fff;
+}
+text.value {
+  font-size: 1em;
+  fill: #fff;
+}
+text.title {
+  font-size: 1em;
+  font-weight: 600;
+  fill: #fff;
+}
+text.label {
+  font-size: 1em;
+  font-weight: 400;
+  fill: #fff;
+}
+text.source {
+  font-size: 0.8em;
+  fill: #fff;
+}

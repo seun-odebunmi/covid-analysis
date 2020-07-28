@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>COVID-19 in China</title>
+    <link rel="stylesheet" href="style/tachyons.min.css" />
+    <link href="style/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="flex flex-wrap">
+        <div id="world" class="w-100 pa3">
+          <div class="chart"><svg></svg></div>
+        </div>
+      </div>
+      <div class="flex flex-wrap">
+        <div id="confirmedCases" class="w-50 pa3">
+          <select class="metric">
+            <option value="1">Total Cases</option>
+            <option value="2">Daily Cases</option>
+          </select>
+          <select class="metric2">
+            <option value="1">China</option>
+            <option value="2">China vs World vs Asia</option>
+          </select>
+          <div class="chart"><svg></svg></div>
+        </div>
+        <div id="deaths" class="w-50 pa3">
+          <select class="metric">
+            <option value="1">Total Deaths</option>
+            <option value="2">Daily Deaths</option>
+          </select>
+          <select class="metric2">
+            <option value="1">China</option>
+            <option value="2">China vs World vs Asia</option>
+          </select>
+          <div class="chart"><svg></svg></div>
+        </div>
+      </div>
+      <div class="flex flex-wrap">
+        <div id="infection" class="w-50 pa3">
+          <select class="metric">
+            <option value="1">China</option>
+            <option value="2">China vs World vs Asia</option>
+          </select>
+          <div class="chart"><svg></svg></div>
+        </div>
+        <div id="mortality" class="w-50 pa3">
+          <select class="metric">
+            <option value="1">China</option>
+            <option value="2">China vs World vs Asia</option>
+          </select>
+          <div class="chart"><svg></svg></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script/lib/d3.v5.min.js"></script>
+    <script src="https://unpkg.com/simple-statistics@7.0.8/dist/simple-statistics.min.js"></script>
+    <script src="script/lib/d3-legend.min.js"></script>
+    <script src="script/lib/topojson-client.min.js"></script>
+    <script src="script/lib/d3-tip.min.js"></script>
+    <script src="script/util.js"></script>
+    <script src="script/index.js" type="module"></script>
+  </body>
+</html>
